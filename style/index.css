@@ -1,0 +1,211 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    position: relative;
+    text-align: center;
+    height: 250px;
+}
+
+.centered-cover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    font-size: 5rem;
+    color: white;
+}
+
+cover {
+    display: block;
+    height: 250px;
+    background: url("/images/cover.jpg") no-repeat center center/cover;
+    filter: brightness(50%);
+}
+
+/* ########################################################## */
+nav {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+    border-top: 3px solid  #34495e;
+    border-bottom: 3px solid #34495e;
+
+}
+
+/* Navigation links */
+nav a {
+    float: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    width: 30%;
+    padding: 30px;
+    /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    text-align: center;
+    /* If you want the text to be centered */
+}
+
+/* Add a background color on mouse-over */
+nav a:hover {
+    background-color: #000;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+/* Style the current/active link */
+nav a.active {
+    background-color: #04AA6D;
+}
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px) {
+    nav a {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: left;
+        /* If you want the text to be left-aligned on small screens */
+    }
+}
+
+
+.nav-button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    filter: grayscale(0.6);
+    transition: all 0.3s ease-in-out;
+
+    /* text-shadow: 2px 2px #3498db; */
+
+}
+
+.nav-button:hover {
+    filter: grayscale(0.5) saturate(2) brightness(1.5);
+}
+
+.about-us {
+    background: url("/images/about-us.jpg") no-repeat center center/cover;
+}
+
+.services {
+    background: url("/images/services.jpg") no-repeat center center/cover;
+}
+
+.contact {
+    background: url("/images/contact.jpg") no-repeat center center/cover;
+}
+
+hr {
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 50%;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+
+
+.main-container {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+
+    width: 80%;
+}
+
+/* Control the left side */
+.split-left {
+    /* background-color: #111; */
+    width: 50%;
+    height: 100%;
+    /* height: 100px; */
+    float: left;
+    background: url("/images/why-us.jpg") no-repeat center center/cover;
+}
+
+/* Control the right side */
+.split-right {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    margin-left: 50%;
+    font-size: large;
+    letter-spacing: 2px;
+    /* height: 100px; */
+    /* box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px; */
+    height: 500px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#why-us {
+    height: 500px;
+}
+
+#why-title {
+    padding: 30px;
+    font-size: 4rem;
+    
+}
+
+#contact-button {
+    margin-top:30px;
+    padding: 20px;
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#contact-button:hover {
+    box-shadow: 3px 5px #c0392b;
+}
+
+#news {
+    background-color: #f0f0f0;
+    color: black;
+    padding-bottom: 100px;
+}
+
+#news-group {
+    display: flex;
+    /* justify-content: center; */
+    justify-content: center;
+}
+
+.news-child {
+    background-color: #8a8a8a;
+    padding: 200px;
+    margin: 10px;
+}
+
+.center-group {
+    text-align: center;
+    padding:30px;
+}
+
+#testimonies {
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+#testimonies-title {
+    padding-top: 20px;
+}
