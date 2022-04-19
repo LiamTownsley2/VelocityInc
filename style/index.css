@@ -59,7 +59,8 @@ nav a {
 /* Add a background color on mouse-over */
 nav a:hover {
     background-color: #000;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    color: #a11b0c;
+    box-shadow: rgb(77, 63, 38) 0px 20px 30px -10px;
 }
 
 /* Style the current/active link */
@@ -191,9 +192,21 @@ hr {
 }
 
 .news-child {
-    background-color: #8a8a8a;
-    padding: 200px;
-    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    max-width: 300px;
+    padding: 30px;
+    margin: 20px;
+    background-color: white;
+    transition: transform 0.3s ease-in-out;
+    cursor: default;
+}
+
+.news-child:hover {
+    transform: scale(1.03);
+}
+
+.news-child img {
+    height: 100px;
 }
 
 .center-group {
@@ -202,10 +215,37 @@ hr {
 }
 
 #testimonies {
-    text-align: center;
     background-color: #f9f9f9;
+    font-size: 20px;
+    padding-bottom: 50px;
+}
+
+#testimonies-parent {
+    display: flex;
+    justify-content: center;
 }
 
 #testimonies-title {
+    text-align: center;
     padding-top: 20px;
+    padding-bottom: 20px;
 }
+
+#testimonies-child {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    background-color: white;
+    padding: 15px;
+    width: 400px;
+}
+
+#testimonies-child p {
+    padding-top: 10px;
+}
+
+#testimonies-image {
+    width: 100px;;
+}
+
+.checked {
+    color: orange;
+  }
